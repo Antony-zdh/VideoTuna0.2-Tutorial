@@ -1,5 +1,5 @@
 Getting Started
-=====
+===============
 
 .. _installation:
 
@@ -37,6 +37,7 @@ Contents
 
 .. toctree::
 
-   Installation
-   Data Preparation
+   installation
+   data_preparation
+   api
 
