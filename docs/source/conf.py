@@ -37,7 +37,6 @@ templates_path = ['_templates']
 
 html_title = "VideoTuna"
 html_theme = "furo"
-html_static_path = ["_static"]
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
