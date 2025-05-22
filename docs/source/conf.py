@@ -17,7 +17,13 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    "myst_parser",
 ]
+
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".md": "markdown",
+}
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -29,7 +35,9 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'furo'
+html_title = "VideoTuna"
+html_theme = "furo"
+html_static_path = ["_static"]
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
