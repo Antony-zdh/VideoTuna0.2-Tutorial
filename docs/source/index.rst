@@ -25,6 +25,8 @@ Documentation
   :caption: Getting Started
 
   getting_started/installation
+  getting_started/data_preparation
+  getting_started/api
 
 .. toctree::
   :maxdepth: 2
