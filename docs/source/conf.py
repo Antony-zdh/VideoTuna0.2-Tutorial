@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'VideoTuna'
-copyright = ''
+copyright = 'VideoTuna Team'
 author = 'Donghao Zhao'
 
 release = '0.1'
