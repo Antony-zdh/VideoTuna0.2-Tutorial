@@ -1,24 +1,22 @@
-Welcome to Lumache's documentation!
+Welcome to VideoTuna v0.2's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+`VideoTuna <https://github.com/VideoVerses/VideoTuna/>`_ is a useful codebase for text-to-video applications.
+ VideoTuna is the first repo that integrates multiple AI video generation models including text-to-video (T2V), image-to-video (I2V), text-to-image (T2I), and video-to-video (V2V) generation for model inference and finetuning (to the best of our knowledge).
+🌟 VideoTuna is the first repo that provides comprehensive pipelines in video generation, from fine-tuning to pre-training, continuous training, and post-training (alignment) (to the best of our knowledge).
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`getting_started` section for a detailed tutorial.
 
-Lumache hosts its documentation on Read the Docs.
+VideoTuna v0.2 hosts its documentation on Read the Docs.
 
 .. note::
 
-   This project is under active development.
+   This tutorial project is under active development.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   getting_started
+   advanced
