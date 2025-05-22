@@ -9,7 +9,7 @@ Welcome to VideoTuna v0.2's documentation!
 
 VideoTuna is the first repo that provides comprehensive pipelines in video generation, from fine-tuning to pre-training, continuous training, and post-training (alignment) (to the best of our knowledge).
 
-Check out the :doc:`getting_started` section for a detailed tutorial.
+Check out the :doc:`getting_started/installation` section for a detailed tutorial.
 
 VideoTuna v0.2 hosts its documentation on Read the Docs.
 
