@@ -9,6 +9,7 @@ CUDA Installation
 Compute Unified Device Architecture (CUDA) is a parallel computing platform and programming model developed by NVIDIA that enables general-purpose computing on their GPUs. In scenarios where parallelization is possible to enhance computation efficiency, CUDA is being used intensively by both research and the industry.
 
 Pre-installation check
+~~~~~~~~~~~~~~~~~~~~~~
 - **Sufficient Disk Space**: Make sure your computer has at least 6 GB free disk space.  
 - **CUDA Compatibility of your GPU**:  
   - Visit `CUDA GPU List <https://developer.nvidia.com/cuda-gpus>`_ to check compatibility.  
