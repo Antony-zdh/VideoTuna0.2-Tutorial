@@ -9,9 +9,11 @@ CUDA Installation
 Compute Unified Device Architecture (CUDA) is a parallel computing platform and programming model developed by NVIDIA that enables general-purpose computing on their GPUs. In scenarios where parallelization is possible to enhance computation efficiency, CUDA is being used intensively by both research and the industry.
 
 Pre-installation check
-- Sufficient Disk Space: Make sure your computer has at least 6 GB free disk space.
-- CUDA Compatibility of your GPU: Visit `https://developer.nvidia.com/cuda-gpus < https://developer.nvidia.com/cuda-gpus>`_ to check whether your GPU is compatible with CUDA. In case you do not know your GPU, execute ``lspci | grep—i nvidia`` (Linux) in your shell terminal to check available GPUs.
-- Admin Privileges: You need to have admin or sudo (superuser do) access to install CUDA on Windows or Ubuntu.
+- **Sufficient Disk Space**: Make sure your computer has at least 6 GB free disk space.  
+- **CUDA Compatibility of your GPU**:  
+  - Visit `CUDA GPU List <https://developer.nvidia.com/cuda-gpus>`_ to check compatibility.  
+  - Run ``lspci | grep -i nvidia`` (Linux) to identify your GPU.  
+- **Admin Privileges**: You need `sudo` (Linux) or Administrator access (Windows) to install CUDA. 
 
 Linux
 ~~~~~
