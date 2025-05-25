@@ -131,7 +131,7 @@ If failed to clone, you may try some other methods (HTTPS, SSH, GitHub CLI).
 VideoTuna Environment Preparation
 ---------------------------------
 (1) If you use Linux and Conda (Recommended)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We create a new environment named "videotuna" (you name it) with python version 3.10, activate it, and use ``pip`` (Python's package installer) to install poetry. Poetry is a dependency management and packaging tool for Python projects. After installing poetry, we use poetry to initialize and install project dependencies by finding ``pyproject.toml`` file under the current directory.
 
@@ -163,6 +163,7 @@ Optional: Video-to-video enhancement
 (If this command above get stucked, kill and re-run it will solve the issue)
 
 (2) If you use Linux and Poetry (without Conda)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install `Poetry <https://python-poetry.org/docs/#installation>`_. Similar to conda, use poetry to prepare the environment:
 
@@ -192,6 +193,7 @@ Optional: Video-to-video enhancement
 (If this command above get stucked, kill and re-run it will solve the issue)
 
 (3) If you use MacOS
+~~~~~~~~~~~~~~~~~~~~
 
 On MacOS with Apple Silicon chip use `docker compose <https://docs.docker.com/compose/>`_ because some dependencies are not supporting arm64 (e.g. bitsandbytes, decord, xformers).
 
