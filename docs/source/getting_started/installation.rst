@@ -168,6 +168,7 @@ Optional: Video-to-video enhancement
 Install `Poetry <https://python-poetry.org/docs/#installation>`_. Similar to conda, use poetry to prepare the environment:
 
 .. code-block:: bash
+
     poetry config virtualenvs.in-project true # optional but recommended, will ensure the virtual env is created in the project root
     poetry config virtualenvs.create true # enable this argument to ensure the virtual env is created in the project root
     poetry env use python3.10 # will create the virtual env, check with `ls -l .venv`.
