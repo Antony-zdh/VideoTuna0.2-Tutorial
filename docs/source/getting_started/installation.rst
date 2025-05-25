@@ -64,7 +64,7 @@ Check your installation with ``nvidia-smi``. If not installed, you may install i
 
 Find your target CUDA Toolkit from `CUDA Toolkit Archive <https://developer.nvidia.com/cuda-toolkit-archive>`_. Here we demonstrate with `CUDA 12.9 <https://developer.nvidia.com/cuda-12-9-0-download-archive/>`_. 
 
-.. image:: ../assets/CUDA12.9-demo-version-panel.png
+    .. image:: ../assets/CUDA12.9-demo-version-panel.png
 
 In case you installed some other version before and would like to uninstall, you may execute ``sudo /usr/local/cuda-11.8/bin/cuda-uninstaller`` (change the version manually). Alternatively, you may:
 
