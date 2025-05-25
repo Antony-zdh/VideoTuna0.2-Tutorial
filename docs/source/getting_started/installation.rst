@@ -88,5 +88,29 @@ After installation, you may double check with ``nvcc -V``.
 Windows
 ~~~~~~~
 
-MacOS
-~~~~~
+1. Ensure system version supported
+Find your system version from Settings > System > About. Make sure your system version is in the list below:
+
+.. list-table::
+   :widths: 50
+   :header-rows: 1
+
+   * - Versions supported
+   * - Microsoft Windows 11 21H2
+   * - Microsoft Windows 11 22H2-SV2
+   * - Microsoft Windows 11 23H2
+   * - Microsoft Windows 10 21H2
+   * - Microsoft Windows 10 22H2
+   * - Microsoft Windows Server 2022
+
+2. Install CUDA Toolkit
+
+Find your target CUDA Toolkit from `CUDA Toolkit Archive <https://developer.nvidia.com/cuda-toolkit-archive>`_. Here we demonstrate with `CUDA 12.9 <https://developer.nvidia.com/cuda-12-9-0-download-archive/>`_.
+
+  .. image:: ../assets/CUDA12.9-demo-version-panel-windows.png
+
+Following the instruction from Nvidia download archive, we proceed to install:
+
+  .. image:: ../assets/install_instr_windows.png
+
+After installation, you may double check with ``nvcc -V``.
