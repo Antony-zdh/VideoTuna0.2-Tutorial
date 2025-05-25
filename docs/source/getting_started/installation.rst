@@ -114,3 +114,127 @@ Following the instruction from Nvidia download archive, we proceed to install:
   .. image:: ../assets/install_instr_windows.png
 
 After installation, you may double check with ``nvcc -V``.
+
+VideoTuna Repository Clone
+--------------------------
+Clone videotuna repo from `VideoTuna GitHub <https://github.com/VideoVerses/VideoTuna>`_. In the GitHub interface, click ``<> Code`` to clone through HTTPS, SSH, or GitHub CLI. 
+
+e.g. git clone through HTTPS:
+
+.. code-block:: bash
+
+    git clone https://github.com/VideoVerses/VideoTuna.git
+    cd VideoTuna
+
+If failed to clone, you may try some other methods (HTTPS, SSH, GitHub CLI).
+
+VideoTuna Environment Preparation
+---------------------------------
+(1) If you use Linux and Conda (Recommended)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We create a new environment named "videotuna" (you name it) with python version 3.10, activate it, and use ``pip`` (Python's package installer) to install poetry. Poetry is a dependency management and packaging tool for Python projects. After installing poetry, we use poetry to initialize and install project dependencies by finding ``pyproject.toml`` file under the current directory.
+
+.. code-block:: bash
+
+    conda create -n videotuna python=3.10 -y
+    conda activate videotuna
+    pip install poetry
+    poetry install
+
+(The above process takes around 3 minutes)
+
+Optional: Flash-attn installation
+
+Hunyuan model uses it to reduce memory usage and speed up inference. If it is not installed, the model will run in normal mode. Install the flash-attn via:
+
+.. code-block:: bash
+
+    poetry run install-flash-attn 
+
+(The above process takes around 1 minute)
+
+Optional: Video-to-video enhancement
+
+.. code-block:: bash
+
+    poetry run pip install "modelscope[cv]" -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
+
+(If this command above get stucked, kill and re-run it will solve the issue)
+
+(2) If you use Linux and Poetry (without Conda)
+
+Install `Poetry <https://python-poetry.org/docs/#installation>`_. Similar to conda, use poetry to prepare the environment:
+
+.. code-block:: bash
+    poetry config virtualenvs.in-project true # optional but recommended, will ensure the virtual env is created in the project root
+    poetry config virtualenvs.create true # enable this argument to ensure the virtual env is created in the project root
+    poetry env use python3.10 # will create the virtual env, check with `ls -l .venv`.
+    poetry env activate # optional because Poetry commands (e.g. `poetry install` or `poetry run <command>`) will always automatically load the virtual env.
+    poetry install
+
+Optional: Flash-attn installation
+
+Hunyuan model uses it to reduce memory usage and speed up inference. If it is not installed, the model will run in normal mode. Install the flash-attn via:
+
+.. code-block:: bash
+
+    poetry run install-flash-attn 
+
+(The above process takes around 1 minute)
+
+Optional: Video-to-video enhancement
+
+.. code-block:: bash
+
+    poetry run pip install "modelscope[cv]" -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
+
+(If this command above get stucked, kill and re-run it will solve the issue)
+
+(3) If you use MacOS
+
+On MacOS with Apple Silicon chip use `docker compose <https://docs.docker.com/compose/>`_ because some dependencies are not supporting arm64 (e.g. bitsandbytes, decord, xformers).
+
+Build VideoTuna using docker compose:
+
+.. code-block:: bash
+
+    docker compose build videotuna
+
+To preserve the project's files permissions set those env variables:
+
+.. code-block:: bash
+
+    export HOST_UID=$(id -u)
+    export HOST_GID=$(id -g)
+
+Install and check dependencies:
+
+.. code-block:: bash
+
+    docker compose run --remove-orphans videotuna poetry env use /usr/local/bin/python
+    docker compose run --remove-orphans videotuna poetry run python -m pip install --upgrade pip setuptools wheel
+    docker compose run --remove-orphans videotuna poetry install
+    docker compose run --remove-orphans videotuna poetry run pip install "modelscope[cv]" -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
+    docker compose run --remove-orphans videotuna poetry add wheel
+    
+    docker compose run --remove-orphans videotuna poetry run pip freeze # Check dependencies
+
+(Installing swissarmytransformer might hang. Just try again and it should work)
+
+Run Poetry commands:
+
+.. code-block:: bash
+
+    docker compose run --remove-orphans videotuna poetry run format
+
+Start a terminal:
+
+.. code-block:: bash
+
+    docker compose run -it --remove-orphans videotuna bash
+
+
+
+
+
