@@ -6,8 +6,11 @@ Checkpoints Preparation
 1. Supported Models
 -------------------
 
-.. list-table:: T2V-Models
-   :widths: 30 20 20
+T2V-Models
+~~~~~~~~~~
+
+.. list-table::
+   :widths: 20 20 20
    :header-rows: 1
 
    * - Model
@@ -44,8 +47,11 @@ Checkpoints Preparation
      - 320x512x16
      - Hugging Face
 
-.. list-table:: I2V-Models
-   :widths: 30 20 20
+T2V-Models
+~~~~~~~~~~
+
+.. list-table::
+   :widths: 20 20 20
    :header-rows: 1
 
    * - Model
