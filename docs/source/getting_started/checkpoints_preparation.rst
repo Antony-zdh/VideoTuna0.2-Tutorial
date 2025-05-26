@@ -67,6 +67,20 @@ I2V Models
      - 320x512x16
      - Hugging Face
 
+V2V Models
+~~~~~~~~~~
+
+.. list-table::
+   :widths: 20 20 20
+   :header-rows: 1
+
+   * - Model
+     - Resolution (HxW)
+     - Checkpoints
+   * - ModelScope V2V
+     - 720x1280
+     - Hugging Face
+
 2. Checkpoints Download
 -----------------------
 
