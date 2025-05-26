@@ -22,6 +22,7 @@ Documentation
 
   getting_started/installation
   getting_started/data_preparation
+  getting_started/checkpoints_preparation
   getting_started/api
 
 .. toctree::
