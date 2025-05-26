@@ -1,4 +1,4 @@
-.. _checkpoints_preparation
+.. _checkpoints_preparation:
 
 Checkpoints Preparation
 =======================
@@ -210,7 +210,7 @@ V2V Models
     git clone https://www.modelscope.cn/iic/Video-to-Video.git
 
 3. Checkpoints Orgnization Structure
------------------------------------
+------------------------------------
 
 Please refer to the following checkpoints tree structure
 
