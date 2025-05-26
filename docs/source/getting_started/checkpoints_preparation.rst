@@ -47,7 +47,7 @@ T2V-Models
      - 320x512x16
      - Hugging Face
 
-T2V-Models
+I2V-Models
 ~~~~~~~~~~
 
 .. list-table::
