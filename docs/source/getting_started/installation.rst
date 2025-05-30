@@ -87,7 +87,11 @@ Following the instruction from Nvidia download archive, we proceed to install fr
     wget https://developer.download.nvidia.com/compute/cuda/12.9.0/local_installers/cuda_12.9.0_575.51.03_linux.run
     sudo sh cuda_12.9.0_575.51.03_linux.run
 
-After installation, you may double check with ``nvcc -V``. 
+In the CUDA Installer panel, you should select CUDA Toolkit, Demo Suite, and Documentation. You do not need to select Kernel Objects.
+
+After installation, you may double check with ``nvcc -V``. If it does not work, you should check that the installed CUDA path (e.g. ``/usr/local/cuda-12.9/bin``) is added to your PATH variable properly. If not added, add it to your PATH by executing ``export PATH=$PATH:/usr/local/cuda/bin``. In many cases, where you may want this new path in PATH permanently, you should use ``nano ~/.bashrc``, add the line ``export PATH=$PATH:/usr/local/cuda/bin``, close the nano interface, and run ``source ~/.bashrc``. 
+
+Try ``nvcc -V`` again and it should work.
 
 Windows
 ~~~~~~~
