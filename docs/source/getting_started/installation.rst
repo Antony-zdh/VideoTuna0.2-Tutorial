@@ -36,7 +36,7 @@ Linux
     DISTRIB_ID=Ubuntu
     DISTRIB_RELEASE=22.04
 
-CUDA also supports ``DISTRIB_ID`` of RHEL/CentOS, Debian, SLES. Check `https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements <https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements>`_ for details.
+CUDA also supports ``DISTRIB_ID`` of RHEL/CentOS, Debian, SLES. Check `CUDA System Requirements <https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements>`_ for details.
 
 2. Ensure GNU Compiler Collection (GCC) installed
 
