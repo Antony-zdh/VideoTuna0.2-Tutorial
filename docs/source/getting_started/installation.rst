@@ -117,7 +117,12 @@ Following the instruction from Nvidia download archive, we proceed to install:
 
   .. image:: ../assets/install_instr_windows.png
 
-Steps to install: Accept the End User License Agreement > Choose the CUDA option (Simply installs CUDA would be enough for most cases). The installation process takes about 3 minutes.
+Steps to install: 
+
+- Accept the End User License Agreement 
+- Choose the CUDA option (Simply installs CUDA would be enough for most cases) 
+
+The above installation process takes about 3 minutes.
 
 After installation, you may double check with ``nvcc -V``. If nvcc still not found, you should check Setting > System > About > Advanced system settings > Environment Variables, and ensure your cuda path is included in the PATH list (e.g. ``C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin``). 
 
