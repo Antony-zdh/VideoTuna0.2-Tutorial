@@ -124,13 +124,12 @@ By following above steps, you can easily integrate Vript into our framework and 
 3. UCF101 Dataset
 ~~~~~~~~~~~~~~~~~
 
-`UCF101 <https://www.crcv.ucf.edu/data/UCF101.php>`_ is an action recognition data set of realistic action videos, collected from YouTube, having 101 action categories. This data set is an extension of UCF50 data set which has 50 action categories. The 101 action categories can be divided into five types: 1)Human-Object Interaction 2) Body-Motion Only 3) Human-Human Interaction 4) Playing Musical Instruments 5) Sports. 
+`UCF101 <https://www.crcv.ucf.edu/data/UCF101.php>`_ is an action recognition data set of realistic action videos, collected from YouTube, having 101 action categories. This data set is an extension of UCF50 data set which has 50 action categories. `Click here for direct download <https://www.crcv.ucf.edu/data/UCF101/UCF101.rar>`_
 
-Dataset Usage (Finetune)
-------------------------
+The 101 action categories can be divided into five types: 1)Human-Object Interaction 2) Body-Motion Only 3) Human-Human Interaction 4) Playing Musical Instruments 5) Sports. 
 
-Dataset Class
-~~~~~~~~~~~~~
+Dataset Usage
+-------------
 
 - The ``DatasetFromCSV`` class is designed to load video data according to a CSV file.
 - You may find detailed source code in ``videotuna/data/datasets.py``.
