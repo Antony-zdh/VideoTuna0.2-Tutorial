@@ -11,9 +11,13 @@ Compute Unified Device Architecture (CUDA) is a parallel computing platform and 
 Pre-installation check
 ~~~~~~~~~~~~~~~~~~~~~~
 - **Sufficient Disk Space**: Make sure your computer has at least 6 GB free disk space.  
-- **CUDA Compatibility of your GPU**:  
+- **CUDA Compatibility of your GPU**:
+
   - Visit `CUDA GPU List <https://developer.nvidia.com/cuda-gpus>`_ to check compatibility.  
-  - Run ``lspci | grep -i nvidia`` (Linux) to identify your GPU.  
+  - Run ``lspci | grep -i nvidia`` (Linux) to identify your GPU (run ``sudo apt install pciutils`` if 'lspci' not found).
+  - For Windows, press ``Ctrl + Shift + Esc`` to open Task Manager, you can find your GPU in Performance > GPU 0.
+  - For Windows, you may also execute ``Get-WmiObject Win32_VideoController | Select-Object Name, Description`` in PowerShell.
+
 - **Admin Privileges**: You need `sudo` (Linux) or Administrator access (Windows) to install CUDA. 
 
 Linux
