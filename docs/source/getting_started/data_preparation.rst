@@ -75,7 +75,7 @@ Important Considerations
 - **Training and Validation Split:** If `split_val` is set to `True`, the dataset will be split into training and validation sets. Ensure that the `train` parameter is set correctly to indicate whether the dataset is for training or validation.
 
 Dataset Transformation
-------------------
+----------------------
 
 Below are examples of transforming dataset to our supported format.
 
