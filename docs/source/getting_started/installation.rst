@@ -73,7 +73,13 @@ Find your target CUDA Toolkit from `CUDA Toolkit Archive <https://developer.nvid
 
     .. image:: ../assets/CUDA12.9-demo-version-panel.png
 
-In case you installed some other version before and would like to uninstall, you may execute ``sudo /usr/local/cuda-11.8/bin/cuda-uninstaller`` (change the version manually). Alternatively, you may:
+In case you installed some other version before and would like to uninstall, you may execute
+
+.. code-block:: bash
+
+    sudo /usr/local/cuda-11.8/bin/cuda-uninstaller
+
+Alternatively, you may:
 
 .. code-block:: bash
 
