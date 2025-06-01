@@ -132,8 +132,41 @@ Dataset Usage
 -------------
 
 - The ``DatasetFromCSV`` class is designed to load video data according to a CSV file.
-- You may find detailed source code in ``videotuna/data/datasets.py``.
+- You may find detailed source code in `videotuna/data/datasets.py <https://github.com/VideoVerses/VideoTuna/blob/main/videotuna/data/datasets.py>`_.
 
 Please follow the below instructions to finetune with your dataset.
 
 1. Import necessary modules
+
+.. code-block:: bash
+
+    import torch
+    from data.datasets import DatasetFromCSV
+
+2. Initialize the dataset
+
+.. code-block:: bash
+
+    dataset = DatasetFromCSV(
+        csv_path='path/to/your/csvfile.csv',
+        data_root='path/to/data/root',
+        transform=None,  # or provide your own transform functions
+        resolution=(256, 256),
+        num_frames=16,
+        frame_interval=1,
+        train=True,
+        split_val=False
+    )
+
+3. Use the dataset with a DataLoader
+
+.. code-block:: bash
+
+    from torch.utils.data import DataLoader
+
+    dataloader = DataLoader(dataset, batch_size=4, shuffle=True)
+    for batch in dataloader:
+        videos = batch['video']
+        captions = batch['caption']
+        # Your training or validation code here
+
