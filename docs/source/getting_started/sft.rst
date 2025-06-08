@@ -1,7 +1,7 @@
 .. _sft:
 
 Supervised Fine-tuning (SFT)
-============================
+=============================
 
 This section provides detailed instructions for fine-tuning different models in VideoTuna.
 
